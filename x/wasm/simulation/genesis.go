@@ -6,7 +6,7 @@ import (
 	"github.com/CosmWasm/wasmd/x/wasm/types"
 )
 
-// RandomizeGenState generates a random GenesisState for wasm
+//  RandomizeGenState generates a random GenesisState for wasm
 func RandomizedGenState(simstate *module.SimulationState) {
 	params := RandomParams(simstate.Rand)
 	wasmGenesis := types.GenesisState{
